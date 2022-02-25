@@ -1,0 +1,246 @@
+/*Html elements*/
+a
+{
+     color: #fff;
+     text-decoration: none;
+     font-size: 1.2rem;
+}
+a:hover
+{
+     color: aliceblue;
+}
+.container-fluid
+{
+     padding: 7% 15%;
+}
+
+/*Background-color-sections*/
+.color-dark
+{
+     background-color: #1FAB89;
+     color: #fff;
+}
+.color-light
+{
+     background-color: #D7FBE8;
+}
+
+/*Headings*/
+.title-heading
+{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 5rem;
+}
+.sub-heading
+{
+     font-size: 1.2rem;
+     font-weight: 500;
+}
+.captions
+{
+     font-size: 1.3rem;
+}
+.icon-heading
+{
+     color: rgb(97, 95, 95);
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 1.2rem;
+     width: 85%;
+     margin: 0 auto;
+}
+.chat-head
+{
+      font-size: 5.5rem;
+}
+
+/*Title Section*/
+#title
+{
+     line-height: 2.5rem;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     padding-bottom: 2%;
+}
+/*Navbar*/
+.style-nav
+{
+     font-size: 1.2rem;
+     margin: 0 15%;
+}
+.nav-item
+{
+     margin: 5px 10px;
+}
+.textbox
+{
+     margin-bottom: 15px;
+     width: 60%;
+}
+
+/*Title Button - "Click here to Start chat*/
+.click-btn
+{
+     padding-top: 10px;
+     margin-top: 10px;
+}
+
+.title-img
+{
+     position: relative;
+}
+.img-logo
+{
+     width: 70%;
+     position: absolute;
+     right: 8%;
+}
+
+/*Section - Instruction*/
+#instruction
+{
+     line-height: 2.5rem;
+     text-align: center;
+}
+
+.icon
+{
+     width: 35%;
+     margin-bottom: 1.2rem;
+}
+
+/*About Section*/
+#about
+{
+     font-family: 'Montserrat', sans-serif;
+     line-height: 2rem;
+}
+.about-heading
+{
+     font-size: 3.5rem;
+     margin: 15px 0;
+}
+
+/*Footer Section*/
+#footer
+{
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     padding: 0 15%;
+}
+.contact-us
+{
+     color: rgb(97, 95, 95);
+}
+.contact-us:hover
+{
+     color: darkcyan;
+}
+
+/*Chatroom page*/
+.home
+ {
+      position: absolute;
+      top: 10%;
+      right: 25%;
+}
+
+/*Div-containing headings and button*/
+#join-style
+{
+     position: absolute;
+     top: 25%;
+     left: 35%;
+     color: #fff;
+     text-align: center;
+     line-height: 1.5;
+}
+
+.btn-style
+{
+     margin: 10px 10px 0;
+}
+
+#stream-wrapper
+{
+     background-color: #1FAB89;
+     height: 100vh;
+}
+ 
+#video-streams
+{
+     background-color: #1FAB89;
+     display:grid;
+     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+     height: 90vh;
+     width: 1200px;
+     margin:0 auto;
+}
+ 
+.video-container
+{
+     max-height: 100%;
+     border: 2px solid #1FAB89;
+     background-color: #203A49;
+}
+ 
+.video-player
+{
+     height: 100%;
+     width: 100%;
+}
+
+#stream-controls
+{
+     display: none;
+     justify-content: center;
+     margin-top:0.5em;
+}
+
+
+/*Website Media queries*/
+@media (max-width : 1028px)
+{
+     .title-heading
+     {
+          font-size: 3rem;
+     }
+     .captions, .sub-heading 
+     {
+          font-size: 1rem;
+     }
+     #title
+     {
+          text-align: center;
+          
+     }
+     .img-logo
+     {
+          position: static;
+          width: 40%;
+          padding-top: 4%;
+     }
+     .icon
+     {
+          width: 15%;
+          padding-top: 10px;
+     }
+     .nav-item
+     {
+          text-align: left;
+     }
+     #stream-wrapper
+     {
+          width: 500px;
+     }
+}
+
+/*Chatroom-page*/
+@media screen and (max-width:1400px){
+     #video-streams{
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         width: 95%;
+     }
+ }
+
